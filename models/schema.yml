@@ -31,7 +31,7 @@ sources:
          - unique:
             column_name: 'BRANCH_ID || TOWN'
       - name : categories
-        identifier: categories
+        identifier: categories_with_unit_price
         columns:
          - name: ITEMID
            tests: 
@@ -70,4 +70,7 @@ sources:
              - unique
          - name: ITEMNAME
            tests: 
-             - not_null           
+             - not_null
+         - name: UNIT_PRICE
+           tests: 
+             - not_null
