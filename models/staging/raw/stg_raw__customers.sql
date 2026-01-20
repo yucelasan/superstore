@@ -9,16 +9,16 @@ source as (
 renamed as (
 
     select
-        userid,
+        userid as user_id ,
         username_ as username,
-        namesurname,
-        usergender,
-        userbirthdate,
+        namesurname as name_surname,
+        usergender as user_gender,
+        userbirthdate as user_birthdate,
         region,
         city,
         town,
         district,
-        addresstext
+        addresstext as address
 
     from source
 
