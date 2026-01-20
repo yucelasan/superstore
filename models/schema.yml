@@ -1,0 +1,30 @@
+sources:
+  - name: raw
+    schema: superstore_data_raw
+    tables: 
+      - name: branches 
+        identifier: branches
+        columns:
+         - name: BRANCH_ID
+           description: date for orders
+           tests: 
+             - not_null
+             - unique
+         - name: REGION
+           tests: 
+             - not_null
+         - name: CITY
+           tests: 
+             - not_null
+         - name: TOWN
+           tests:
+             - not_null
+         - name: BRANCH_TOWN
+           tests:
+             - not_null
+         - name: LAT
+           tests:
+             - not_null
+         - name: LON
+           tests:
+             - not_null
