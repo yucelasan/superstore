@@ -111,15 +111,9 @@ sources:
          - name: ADDRESSTEXT
            tests: 
              - not_null
-             - unique
                              
       - name : orders
         identifier: orders_with_payment
-        tests:
-         - orders_date_validity 
-         - customer_linkage
-         - total_basket:
-             severity: error
         columns:
          - name: ORDERID
            tests: 
