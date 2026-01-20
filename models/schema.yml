@@ -138,5 +138,29 @@ sources:
          - name: PAYMENT_TYPE
            tests: 
              - not_null
-
+      - name : order_details
+        identifier: order_details
+        columns:
+         - name: ORDERID
+           tests: 
+             - not_null
+         - name : ORDERDETAILID
+           tests: 
+             - not_null
+             - unique
+         - name : AMOUNT
+           tests: 
+             - not_null
+         - name : UNITPRICE
+           tests: 
+             - not_null
+         - name : TOTALPRICE
+           tests: 
+             - not_null
+         - name : ITEMID
+           tests: 
+             - not_null   
+         - name : ITEMCODE
+           tests: 
+             - not_null                                    
 

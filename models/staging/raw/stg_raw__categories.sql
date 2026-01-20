@@ -9,18 +9,18 @@ source as (
 renamed as (
 
     select
-        itemid,
+        itemid as item_id,
         category1,
         category1_id,
         category2,
-        cast(category2_id as int64) as category2_id,
+        cast (category2_id as string) as category2_id,
         category3,
-        cast(category3_id as int64) as category3_id,
+        cast (category3_id as string) as category3_id,
         category4,
-        cast(category4_id as int64) as category4_id,
+        cast (category4_id as string) as category4_id,
         brand,
-        itemcode,
-        itemname,
+        itemcode as item_code,
+        itemname as item_name,
         unit_price
 
     from source
