@@ -71,6 +71,45 @@ sources:
          - name: ITEMNAME
            tests: 
              - not_null 
+      - name : customers
+        identifier: customers
+        columns:
+         - name: USERID
+           tests: 
+             - not_null
+             - unique
+         - name: USERNAME_
+           tests: 
+             - not_null
+         - name: NAMESURNAME
+           tests: 
+             - not_null
+         - name: STATUS_
+           tests: 
+             - not_null
+         - name: USERGENDER
+           tests: 
+             - not_null
+         - name: USERBIRTHDATE
+           tests: 
+             - not_null
+         - name: REGION
+           tests: 
+             - not_null
+         - name: CITY
+           tests: 
+             - not_null
+         - name: TOWN
+           tests: 
+             - not_null
+         - name: DISTRICT
+           tests: 
+             - not_null
+         - name: ADDRESSTEXT
+           tests: 
+             - not_null
+             - unique
+                             
       - name : orders
         identifier: orders
         columns:
