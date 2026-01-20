@@ -13,14 +13,15 @@ renamed as (
         category1,
         category1_id,
         category2,
-        CAST(category2_id AS int64) as category2_id,
+        cast(category2_id as int64) as category2_id,
         category3,
-        CAST(category3_id AS int64) as category3_id,
+        cast(category3_id as int64) as category3_id,
         category4,
-        CAST(category4_id AS int64) as category4_id,
+        cast(category4_id as int64) as category4_id,
         brand,
         itemcode,
-        itemname
+        itemname,
+        unit_price
 
     from source
 
