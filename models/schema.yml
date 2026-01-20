@@ -70,4 +70,28 @@ sources:
              - unique
          - name: ITEMNAME
            tests: 
-             - not_null           
+             - not_null 
+      - name : orders
+        identifier: orders
+        columns:
+         - name: ORDERID
+           tests: 
+             - not_null
+             - unique
+         - name: BRANCH_ID
+           tests: 
+             - not_null
+         - name: DATE_
+           tests: 
+             - not_null
+         - name: USERID
+           tests: 
+             - not_null
+         - name: NAMESURNAME
+           tests: 
+             - not_null
+         - name: TOTALBASKET
+           tests: 
+             - not_null
+
+
