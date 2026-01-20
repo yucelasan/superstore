@@ -30,3 +30,44 @@ sources:
         tests: 
          - unique:
             column_name: 'BRANCH_ID || TOWN'
+      - name : categories
+        identifier: categories
+        columns:
+         - name: ITEMID
+           tests: 
+             - not_null
+             - unique
+         - name: CATEGORY1
+           tests: 
+             - not_null
+         - name: CATEGORY1_ID
+           tests: 
+             - not_null
+         - name: CATEGORY2
+           tests: 
+             - not_null
+         - name: CATEGORY2_ID
+           tests: 
+             - not_null
+         - name: CATEGORY3
+           tests: 
+             - not_null
+         - name: CATEGORY3_ID
+           tests: 
+             - not_null
+         - name: CATEGORY4
+           tests: 
+             - not_null
+         - name: CATEGORY4_ID
+           tests: 
+             - not_null
+         - name: BRAND
+           tests: 
+             - not_null
+         - name: ITEMCODE
+           tests: 
+             - not_null
+             - unique
+         - name: ITEMNAME
+           tests: 
+             - not_null           
