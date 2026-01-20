@@ -9,7 +9,6 @@ sources:
            description: date for orders
            tests: 
              - not_null
-             - unique
          - name: REGION
            tests: 
              - not_null
@@ -28,3 +27,6 @@ sources:
          - name: LON
            tests:
              - not_null
+        tests: 
+         - unique:
+            column_name: 'BRANCH_ID || TOWN'
