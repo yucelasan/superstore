@@ -74,7 +74,6 @@ sources:
          - name: UNIT_PRICE
            tests: 
              - not_null
-             - not_null 
       - name : customers
         identifier: customers
         columns:
@@ -115,7 +114,7 @@ sources:
              - unique
                              
       - name : orders
-        identifier: orders
+        identifier: orders_with_payment
         columns:
          - name: ORDERID
            tests: 
@@ -134,6 +133,9 @@ sources:
            tests: 
              - not_null
          - name: TOTALBASKET
+           tests: 
+             - not_null
+         - name: PAYMENT_TYPE
            tests: 
              - not_null
 
