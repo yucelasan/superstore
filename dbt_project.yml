@@ -43,5 +43,7 @@ models:
     intermediate:
       +schema: int_superstore
       +materialized: view
-
+    mart : 
+      +schema: mart
+      +materialized: table
     
