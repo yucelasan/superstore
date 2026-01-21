@@ -40,3 +40,8 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
+    intermediate:
+      +schema: int_superstore
+      +materialized: view
+
+    
