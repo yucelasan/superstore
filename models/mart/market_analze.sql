@@ -10,7 +10,7 @@ SELECT
   od.city,
   m.nb_of_market,
   od.market_name,
-  count(distinct customer_town) as nb_0f_customer_town,
+  count(distinct customer_town) as nb_of_customer_town,
   COUNT(DISTINCT order_id) as nb_of_order,
   round (sum(revenue),2) as sum_of_revenue
 FROM {{ ref('order_details_all') }} as od
