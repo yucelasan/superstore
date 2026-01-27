@@ -161,5 +161,36 @@ sources:
              - not_null   
          - name : ITEMCODE
            tests: 
-             - not_null                                    
+             - not_null
+      - name : rfm_segmentation
+        identifier: rfm_segmentation
+        columns:
+         - name: user_id
+           tests: 
+             - not_null
+             - unique
+         - name : Recency
+           tests: 
+             - not_null
+         - name : Frequency
+           tests: 
+             - not_null
+         - name : Monetary
+           tests: 
+             - not_null
+         - name : R_score
+           tests: 
+             - not_null
+         - name : F_score
+           tests: 
+             - not_null   
+         - name : M_score
+           tests: 
+             - not_null  
+         - name: RFM_score
+           tests:
+             - not_null
+         - name: segment
+           tests:
+             - not_null
 
