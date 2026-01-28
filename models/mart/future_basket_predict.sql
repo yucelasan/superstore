@@ -7,7 +7,7 @@ with base as (
         total_basket,
         branch_id,
         payment_type
-    from {{ ref('stg_raw__orders') }}
+    from  {{ ref('int_orders_market') }} 
 
 ),
 
@@ -48,4 +48,4 @@ features as (
 
 select *
 from features
-where next_basket is not null
+
