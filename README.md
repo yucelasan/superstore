@@ -1,32 +1,123 @@
-Data Analyst Project
+📊 Data Analyst Project – 3A Superstore
+🇹🇷 TR below
 
-3A Superstore dataları ile yapılan analiz çalışmalarına buradan ulaşabilirsiniz.
+This repository contains end-to-end data analysis and analytics engineering work conducted using the 3A Superstore dataset.
 
-Analizde kullanılan toollar:
--DBT
--Bigquery
--Colab
--Looker
+🔧 Tools & Technologies
 
-Dataset özeti:
-01.01.2021 - 14.08.2023 tarihleri arasında 
+DBT – Data modeling & transformations
+
+BigQuery – Data warehouse
+
+Google Colab – Customer segmentation & forecasting
+
+Looker – Data visualization & dashboards
+
+📁 Dataset Overview
+
+Date Range: 01.01.2021 – 14.08.2023
+
+161 superstore locations
+
+27,000 products
+
+99,998 unique customers with address information
+
+10,235,193 unique orders
+
+51,185,032 order line items
+
+230,323,422 units sold
+
+🏗️ Data Modeling
+
+Raw datasets were loaded into BigQuery as raw tables.
+
+Using DBT, Raw, Staging, and Mart layers were created.
+
+SQL queries for all models can be found under the models directory.
+
+👥 Customer Segmentation
+
+Customer segmentation was performed using Google Colab.
+
+Detailed methodology and results are available in the Colab notebook under the main directory.
+
+📈 Revenue Forecasting
+
+Daily and monthly revenue forecasts were generated for the period 15.08.2023 – 31.12.2023.
+
+Forecasting was based on historical patterns observed in previous years.
+
+The full analysis can be found in the Colab notebook under the main directory.
+
+📊 Dashboard
+
+An interactive dashboard was created using Looker based on the analysis results.
+(Dashboard link can be added here)
+
+📚 Resources
+
+Dataset: https://www.kaggle.com/datasets/cemeraan/3a-superstore
+
+🇹🇷 TR
+📊 Veri Analisti Projesi – 3A Superstore
+
+Bu repository, 3A Superstore verileri kullanılarak gerçekleştirilen uçtan uca veri analizi ve analytics engineering çalışmalarını içermektedir.
+
+🔧 Kullanılan Araçlar
+
+DBT – Veri modelleme ve dönüşümler
+
+BigQuery – Veri ambarı
+
+Google Colab – Müşteri segmentasyonu ve tahminleme
+
+Looker – Veri görselleştirme ve dashboard
+
+📁 Dataset Özeti
+
+Tarih Aralığı: 01.01.2021 – 14.08.2023
 
 161 farklı superstore mağazası
-27,000 ürün
-99,998 tekil müşteri ve adres bilgisi
-10,235,193 tekil sipariş sayısı
-51,185,032 sipariş detayı sayısı 
-230,323,422 satılan ürün sayısı
 
-Kaynakçada iletilen dataset raw tablolar olarak BigQuery e yüklendi.
-Sonrasında Raw, Staging ve Mart tabloları DBT üzerinden oluşturuldu. 
-Models altında oluşturulan tabloların SQL sorgularına ulaşılabilirsiniz.
+27.000 ürün
 
-Müşterilerin segmentlere ayrılması Colab üzerinden yapıldı. Detaylara main altındaki Colab dosyasından ulaşabilirsiniz.
-15.08.2023 - 31.12.2023 arasındaki günlük ve aylık gelir tahminlemesi önceki senelerdeki paternler incelerek tahmin edilmiştir. Yapılan çalışmaya main altındaki Colab dosyasından ulaşabilirsiniz.
+99.998 tekil müşteri ve adres bilgisi
 
-Analiz sonuçları ile oluşturulan Dasboard linki:
+10.235.193 tekil sipariş
 
+51.185.032 sipariş detayı
 
-Kaynaklar:
-- Dataset: https://www.kaggle.com/datasets/cemeraan/3a-superstore 
+230.323.422 satılan ürün adedi
+
+🏗️ Veri Modelleme
+
+Kaynakçada yer alan datasetler BigQuery’e raw tablolar olarak yüklendi.
+
+DBT kullanılarak Raw, Staging ve Mart katmanları oluşturuldu.
+
+Oluşturulan modellere ait SQL sorgularına models klasörü altından ulaşabilirsiniz.
+
+👥 Müşteri Segmentasyonu
+
+Müşterilerin segmentlere ayrılması Google Colab üzerinden gerçekleştirildi.
+
+Kullanılan yöntem ve detaylar main klasörü altındaki Colab dosyasında yer almaktadır.
+
+📈 Gelir Tahminlemesi
+
+15.08.2023 – 31.12.2023 dönemi için günlük ve aylık gelir tahminleri yapılmıştır.
+
+Tahminler, önceki yıllardaki gelir paternleri analiz edilerek oluşturulmuştur.
+
+Çalışmanın detayları main klasörü altındaki Colab dosyasında bulunmaktadır.
+
+📊 Dashboard
+
+Analiz sonuçlarına dayalı olarak Looker üzerinde bir dashboard oluşturulmuştur.
+(Dashboard linki buraya eklenebilir)
+
+📚 Kaynaklar
+
+Dataset: https://www.kaggle.com/datasets/cemeraan/3a-superstore
