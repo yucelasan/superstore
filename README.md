@@ -116,7 +116,7 @@ Tahminler, önceki yıllardaki gelir paternleri analiz edilerek oluşturulmuştu
 📊 Dashboard
 
 Analiz sonuçlarına dayalı olarak Looker üzerinde bir dashboard oluşturulmuştur.
-(Dashboard linki buraya eklenebilir)
+https://lookerstudio.google.com/reporting/e66354cf-9711-468b-9bd2-cc3c7d5d7f91 
 
 📚 Kaynaklar
 
